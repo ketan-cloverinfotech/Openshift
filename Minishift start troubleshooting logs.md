@@ -1,5 +1,3 @@
-## Response:
-Thought for a few seconds
 
 The command you've entered:
 
@@ -81,4 +79,3 @@ If you encounter specific errors or need further assistance with the logs genera
 
 
 ---
-Powered by [ChatGPT Exporter](https://www.chatgptexporter.com)
