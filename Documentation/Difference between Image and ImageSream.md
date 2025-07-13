@@ -71,6 +71,7 @@ Imagine you're running a Node.js application in OpenShift:
 2.  Push this Image to OpenShift ImageStream:
     ```
     oc import-image my-node-app:v1 --from=myregistry.com/my-node-app:v1 --confirm
+    # It will create imagestream name **my-node-app:v1** and Also add image myregistry.com/my-node-app:v1 to image stream otherwise you have to create first image stream with ```oc create imagestream```
     ```
 3.  Now your Deployment points to this ImageStream:
     ```yaml
