@@ -42,3 +42,11 @@ _“When you release a new version of your app, how do you deploy it in OpenShif
 
 _“For monitoring and logging, do you use the OpenShift web interface, or external tools like Prometheus, Grafana, and ELK (Elasticsearch, Logstash, Kibana)? How do you keep an eye on your system health and troubleshoot issues?”_
 
+### Q9. **How do you scale your deployments?**
+
+_“If your application needs to handle more users or traffic, how do you increase the number of running pods? Do you use automatic scaling with something like a Horizontal Pod Autoscaler, or do you add pods manually?”_
+
+* * *
+
+* * *
+
