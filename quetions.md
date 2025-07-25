@@ -16,10 +16,8 @@ _“Do you use both on-premises servers and cloud together for OpenShift? Or is 
 
 * * *
 
-### Q4. **How are your container images built and pushed to your registry?**
-
-_“Can you share how your application images (the files that run your apps) are created and uploaded? For example, do you use Jenkins, Tekton, or build them manually?”_
-
+### Q4. How are your container images built and pushed to your registry?**
+“Can you explain how you build and upload your application images (the files that run your apps)? For example, do you use tools like Jenkins, Tekton, or OpenShift’s own S2I (Source-to-Image) feature? Or do you build them manually?”
 * * *
 
 ### Q5. **Where do you store your container images?**
