@@ -12,13 +12,6 @@ Absolutely! Here’s an elaborated version of your questions for an L3 (advanced
 *   **How many clusters and nodes are currently deployed?**  
     _This gives us an idea about the scale of your environment, resource allocation, and how workloads are distributed._
 
-* * *
-
-### **How You Can Ask These in the Meeting**
-
-*   **“Could you share which OpenShift version your environment is currently running on?”**
-*   **“Is your OpenShift setup cloud-based, on-premises, or hybrid?”**
-*   **“How many clusters and worker nodes are deployed in your environment?”**
 
 * * *
 
