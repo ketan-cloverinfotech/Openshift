@@ -3,6 +3,27 @@ Absolutely! Here’s an elaborated version of your questions for an L3 (advanced
 
 * * *
 
+### **1\. General Setup**
+
+*   **Which OpenShift version are you using?**  
+    _This helps us understand the platform capabilities, compatibility with APIs, and supported features. For example, OpenShift 4.x has many differences compared to OpenShift 3.x._
+*   **Where is OpenShift running – on cloud or on-premises?**  
+    _We want to know if you are using OpenShift on a public cloud (AWS, Azure, GCP, etc.) or your own data center. This will help us plan for integrations, storage, and networking needs._
+*   **How many clusters and nodes are currently deployed?**  
+    _This gives us an idea about the scale of your environment, resource allocation, and how workloads are distributed._
+
+* * *
+
+### **How You Can Ask These in the Meeting**
+
+*   **“Could you share which OpenShift version your environment is currently running on?”**
+*   **“Is your OpenShift setup cloud-based, on-premises, or hybrid?”**
+*   **“How many clusters and worker nodes are deployed in your environment?”**
+
+* * *
+
+Would you like me to **add 5-7 more well-framed advanced L3-level questions** (e.g., about storage, monitoring, networking, and security) that you can ask the client?
+
 1\. **Images & Builds**
 -----------------------
 
