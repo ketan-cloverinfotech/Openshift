@@ -1,5 +1,4 @@
-
-Check resource Quata
+##Check resource Quata
 
 ```
 # Check current CPU and memory utilization on every node
@@ -21,8 +20,8 @@ oc get resourcequota -A
 oc get limitrange -A
 ```
 --------------------------------------------------------------------------
-```
 # Check Horizontal Pod Autoscalers in all namespaces
+```
 oc get hpa -A
 
 # Check PodDisruptionBudgets in all namespaces
@@ -33,7 +32,7 @@ oc get pdb -A
 
 --------------------------------------------------------------------------
 
-Networkpolocy
+## Networkpolocy
 
 ```
 oc get networkpolicy -A
@@ -42,7 +41,7 @@ oc get route -A
 
 __________________________________________________________________________
 
-
+## Roles 
 ```
 oc get clusterrolebindings
 
@@ -67,7 +66,8 @@ select(.roleRef.name == "cluster-admin") |
 
 Check which SCC each Pod is using
 ```
-# Display Pod name, namespace, and assigned SCC
+## Display Pod name, namespace, and assigned SCC
+```
 oc get pods -A \
   -o custom-columns='NAMESPACE:.metadata.namespace,POD:.metadata.name,SCC:.metadata.annotations.openshift\.io/scc'
 
