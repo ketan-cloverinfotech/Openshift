@@ -51,7 +51,7 @@ oc get rolebindings -A
 
 ##Find who has the cluster-admin role
 # Find ClusterRoleBindings that grant the cluster-admin role
-```
+
 oc get clusterrolebinding -o json | jq -r '
 .items[] |
 select(.roleRef.name == "cluster-admin") |
@@ -62,10 +62,22 @@ select(.roleRef.name == "cluster-admin") |
 ```
 ----------------------------------------------------------------------------
 ### SCC: Security Context Constraints.
-
-
-Check which SCC each Pod is using
+#### check ssc
 ```
+oc get scc
+# Display SCC names and important security settings
+oc get scc -o custom-columns='NAME:.metadata.name,PRIVILEGED:.allowPrivilegedContainer,ROOT_POLICY:.runAsUser.type,HOST_NETWORK:.allowHostNetwork,HOST_PATH:.allowHostDirVolumePlugin,ESCALATION:.allowPrivilegeEscalation,PRIORITY:.priority'
+
+
+# Find identities with RBAC permission to use privileged SCC
+oc adm policy who-can use scc privileged
+
+# Find identities with RBAC permission to use anyuid SCC
+oc adm policy who-can use scc anyuid
+```
+
+
+
 ## Display Pod name, namespace, and assigned SCC
 ```
 oc get pods -A \
