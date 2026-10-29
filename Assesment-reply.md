@@ -52,3 +52,34 @@ spec:
 ```
 
 <img width="1536" height="1024" alt="Kubernetes LimitRange Infographic Guide" src="https://github.com/user-attachments/assets/e2262dbc-200a-4c77-b741-ef469b36009e" />
+
+
+
+### 3 SCC 
+**SCC (Security Context Constraints) is a security feature in OpenShift that controls what a Pod is allowed to access and do.**
+
+1. Host Network Restriction
+2. Host volume  Restriction
+
+### 4 NetworkPolcy 
+
+Check	UAT	DR
+NetworkPolicy in saraswat-development	3 policies	0 policies
+allow-from-all-namespaces	Present	Absent
+allow-from-openshift-ingress	Present	Absent
+allow-from-openshift-monitoring	Present	Absent
+Verified default-deny policy	Not shown	Not present
+
+#### Default deny Rule 
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: default-deny-all
+  namespace: networkpolicy-lab
+spec:
+  podSelector: {}
+  policyTypes:
+    - Ingress
+    - Egress
+  ingress: []
+  egress: []
