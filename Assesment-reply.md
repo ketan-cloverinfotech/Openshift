@@ -46,7 +46,7 @@ spec:
       defaultRequest:  # When not mentioned in manifest use this 
         cpu: 250m
         memory: 256Mi
-      default:                  # this default is default limit of each container get 
+      default:                  # this **default** is **default limit** of each container get 
         cpu: 500m
         memory: 512Mi
 ```
